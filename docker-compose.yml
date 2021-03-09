@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  test:
+    image: postgresql
+    ports:
+      - '9999:9999'
+    volumes:
+      - ./data:/var/lib/postgres
+    environment:
+      - POSTGRES_DATABASE=vin
+      - POSTGRES_USER=vin
+      - POSTGRES_PASSWORD=12345TyHs231
