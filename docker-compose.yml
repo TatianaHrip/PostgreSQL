@@ -1,9 +1,9 @@
 version: '3.1'
 services:
   test:
-    image: postgresql
+    image: postgres:alpine
     ports:
-      - '9999:9999'
+      - '5432:5432'
     volumes:
       - ./data:/var/lib/postgres
     environment:
